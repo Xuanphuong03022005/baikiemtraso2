@@ -1,0 +1,82 @@
+
+/* Reset CSS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Container styling */
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px; /* Tăng khoảng cách giữa các sản phẩm */
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Product item styling */
+.product-item {
+    border: 1px solid #ddd;
+    padding: 10px; /* Tăng padding để sản phẩm to hơn */
+    border-radius: 5px;
+    text-align: center;
+    background-color: #fff;
+    transition: transform 0.3s ease-in-out;
+    width: 180px; /* Tăng kích thước sản phẩm */
+    min-height: 250px; /* Định chiều cao tối thiểu để tránh xê dịch */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-item:hover {
+    transform: scale(1.05);
+}
+
+/* Image styling */
+.product-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Title styling */
+.product-title {
+    margin: 5px 0;
+    font-size: 14px; /* Tăng kích thước chữ */
+    font-weight: bold;
+    text-align: center;
+    word-wrap: break-word;
+    min-height: 40px; /* Đảm bảo không làm thay đổi form */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Price styling */
+.product-price {
+    color: orange;
+    font-size: 14px; /* Tăng kích thước chữ */
+    font-weight: bold;
+}
+
+/* Button styling */
+.product-button {
+    display: inline-block;
+    margin-top: 5px;
+    padding: 5px 10px; /* Tăng kích thước nút */
+    background-color: orange;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-size: 12px;
+}
+
+.product-button:hover {
+    background-color: darkorange;
+}
