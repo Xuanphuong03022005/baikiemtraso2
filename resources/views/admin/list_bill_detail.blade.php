@@ -17,6 +17,7 @@
                 <thead>
                     <tr align="center">
                         <th>ID</th>
+                        <th>Id_Bill</th>
                         <th>Product Name</th>
                         <th>Price</th>
                         <th>quantity</th>
@@ -27,6 +28,7 @@
                     @foreach($bill as $key => $value)
                     <tr class="even gradeC" align="center">
                         <td>{{ $value->id }}</td>
+                        <td>{{ $value->id_bill }}</td>
                         <td>{{ $value->product_name }}</td>
                         <td>{{ number_format($value->unit_price) }}VNĐ</td>
                         <td>{{ $value->quantity }}</td>
