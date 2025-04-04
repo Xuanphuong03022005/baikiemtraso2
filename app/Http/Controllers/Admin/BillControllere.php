@@ -24,5 +24,5 @@ class BillControllere extends Controller
         ->get();
         return view('admin.list_bill', compact('bills'));
     }
-    public function admin2(){}
+    public function admin(){}
 }
